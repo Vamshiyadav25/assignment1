@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart cup Coffee- Welcome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Heart cup Coffee</a>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order Coffee</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Head Section -->
+    <section class="head" id="home">
+      <div class="head-content">
+        <h1>Heart cup Coffee</h1>
+        <p>Enjoy a perfect cup of coffee in a truly mesmerizing ambience!</p>
+        <a href="#about" class="btn">Explore More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>
+        At Heart cup coffee, we believe that coffee is not just a beverage, but an
+        experience. Our cozy atmosphere, carefully crafted brews, and commitment
+        to quality make every visit a moment of pure bliss. Come join us for a
+        relaxing break and savor the art of coffee.
+      </p>
+    </section>
+    <!-- Order Coffee Section -->
+    <section class="order" id="order">
+      <h2>Order Coffee</h2>
+      <p>
+        Choose from our selection of premium coffees. Each cup is prepared with
+        passion and served with a smile.
+      </p>
+      <div class="menu-items">
+        <!-- Espresso -->
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17bDQNgcXmHuAabfue83MuOMdphKH4DxpbA&s/300x200"
+            alt="Espresso"
+          />
+          <h3>Espresso</h3>
+          <p>A strong and rich espresso shot to kickstart your day.</p>
+        </div>
+        <!-- Cappuccino -->
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShcooWDH5tcjdbQ8Dd3yIkuVj2TeBh-V1pEQ&s/300x200"
+            alt="Cappuccino"
+          />
+          <h3>Cappuccino</h3>
+          <p>A perfect blend of espresso, steamed milk, and foam.</p>
+        </div>
+        <!-- Latte -->
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPf4Kl6tzwDgPHwa2TH5GXYlpdNlBYhE2GZw&s/300x200"
+            alt="Latte"
+          />
+          <h3>Latte</h3>
+          <p>Smooth and creamy latte with a delicate balance of flavors.</p>
+        </div>
+        <!-- Americano -->
+        <div class="menu-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Americano"
+          />
+          <h3>Americano</h3>
+          <p>Rich espresso diluted with hot water for a smooth finish.</p>
+        </div>
+        <!-- Mocha -->
+        <div class="menu-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUhk8lVaYIXnEi-SKAoDqzyKD5I85ufm6iA&s/300x200"
+            alt="Mocha"
+          />
+          <h3>Mocha</h3>
+          <p>
+            A delightful mix of coffee and chocolate for those with a sweet
+            tooth.
+          </p>
+        </div>
+        <!-- Macchiato -->
+        <div class="menu-item">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Macchiato"
+          />
+          <h3>Macchiato</h3>
+          <p>Espresso marked with a dollop of foamed milk, a balanced treat.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <h2>Testimonials</h2>
+      <p>
+        Hear what our customers have to say about their experience at Coffee
+        Bliss.
+      </p>
+      <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600/60x60/testimonials/1.jpg"
+            alt="Customer 1"
+          />
+          <h3>Venky</h3>
+          <p>
+            "The best coffee I've ever had! The ambiance is so relaxing and the
+            service is top-notch."
+          </p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <img
+            src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600/60x60/testimonials/2.jpg"
+            alt="Customer 2"
+          />
+          <h3>krish</h3>
+          <p>
+            "A delightful experience every time I visit. Their latte art is
+            simply amazing!"
+          </p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <img
+            src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600/60x60/testimonials/3.jpg"
+            alt="Customer 3"
+          />
+          <h3>surya</h3>
+          <p>
+            " Heart Cup Coffee truly lives up to its name. The coffee is rich and
+            flavorful, and the atmosphere is inviting."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have any queries or need to reach out us? Send us a message and we’ll get
+        back to you soon....
+      </p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;@author vamshi krishna, 2025 Heart cup Coffee. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
